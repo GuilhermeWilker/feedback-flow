@@ -1,0 +1,21 @@
+{
+  "name": "guiga/feedback_flow",
+  "description": "Feedback flow é um web-app para ajudar freelancers enviando feedbacks em tempo real para seus clientes.",
+  "autoload": {
+    "psr-4": {
+      "app\\": "src/"
+    },
+    "files": [
+      "app/helpers/constants.php",
+      "app/router/router.php",
+      "app/core/controller.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Guilherme Wilker",
+      "email": "wilkerguilherme0@gmail.com"
+    }
+  ],
+  "require": {}
+}
