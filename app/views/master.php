@@ -6,6 +6,7 @@
     
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
     <div class="container">
