@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid;
+}

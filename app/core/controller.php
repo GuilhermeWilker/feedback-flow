@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Esse método valida se o controller solicitado existe e logo em seguida o renderiza.
+ *
+ * @param mixed $matchedUri
+ * @param mixed $params
+ *
+ * @return $controllerInstance -> namespace do controller junto de seus métodos.
+ *
+ * @throws \Exception
+ */
 function loadController($matchedUri, $params)
 {
     [$controller, $method] = explode('@', array_values($matchedUri)[0]);

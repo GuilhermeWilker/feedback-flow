@@ -6,7 +6,9 @@ class Home
 {
     public function index($params)
     {
-        var_dump('Home');
-        exit;
+        return [
+            'view' => 'home.php',
+            'data' => ['title' => 'Home'],
+            ];
     }
 }
