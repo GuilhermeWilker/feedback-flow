@@ -14,3 +14,20 @@ function all($table, $fields = '*')
         return [];
     }
 }
+
+function findBy(string $table, string $field, string $value, $fields = '*')
+{
+    try {
+        $connect = connect();
+        $prepare = $connect->prepare("
+        select {$fields} from {$table} where {$field} = :{$field}");
+
+        $prepare->execute([
+            $field => $value,
+            ]);
+
+        return $prepare->fetch();
+    } catch (PDOException $e) {
+        $e->getMessage();
+    }
+}
