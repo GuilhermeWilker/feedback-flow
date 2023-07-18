@@ -5,7 +5,9 @@ require './bootstrap.php';
 try {
     $data = router();
 
-    extract($data['data']);
+    if (!isset($data['data'])) {
+        throw new Exception('Não foi encontrado o indice $data..');
+    }
 
     if (!isset($data['view'])) {
         throw new Exception('Não foi encontrado o indice view..');
@@ -14,6 +16,8 @@ try {
     if (!file_exists(VIEWS.$data['view'])) {
         throw new Exception("O arquivo de template {$data['view']} não existe..");
     }
+
+    extract($data['data']);
 
     $view = $data['view'];
 

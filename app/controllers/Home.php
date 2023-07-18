@@ -7,7 +7,7 @@ class Home
     public function index($params)
     {
         return [
-            'view' => 'project_info.php',
+            'view' => 'home.php',
             'data' => ['title' => 'Home'],
             ];
     }
