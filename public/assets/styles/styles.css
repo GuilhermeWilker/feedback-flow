@@ -94,3 +94,51 @@
 
   padding: 12px;
 }
+
+.project-list {
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 220px;
+  height: 80px;
+
+  border-radius: 12px;
+  background: #e6e6e6;
+}
+
+.about-project-header {
+  padding-block: 20px;
+}
+
+.about-project-title {
+  color: #71776f;
+
+  font-size: 16px;
+
+  font-weight: 400;
+}
+
+.form-project-info input {
+  border: 1px solid #808080;
+  width: 75px;
+  height: 20px;
+
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.label-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 233px;
+  height: 71px;
+
+  border-radius: 12px;
+  background: #e6e6e6;
+
+  font-size: 15px;
+  width: 80%;
+}
